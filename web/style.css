@@ -1,0 +1,20 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent; /* Allow seeing behind if possible, though browser usually has bg */
+}
+
+/* In a browser, we can't be truly transparent over other apps, 
+   but we can simulate the overlay look within our own window */
+body {
+    background-color: rgba(0, 0, 0, 0.1); /* Slight tint to show it's working */
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
